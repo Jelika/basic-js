@@ -17,7 +17,7 @@ describe('Extended repeater', () => {
 
   //Specific requirements
 
-  describe('base & functional requirements', () => {
+  describe.only('base & functional requirements', () => {
     it.optional('repeats string properly', () => {
       assert.equal(repeater('la', { repeatTimes: 3 }), 'la+la+la');
       assert.equal(repeater('single', { repeatTimes: 1 }), 'single');
